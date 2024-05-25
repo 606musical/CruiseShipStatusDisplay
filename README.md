@@ -8,4 +8,4 @@ This is a calculator for cruise ships in the game Archeage.
 <sup>現在レイナサーバではdNowだけで済みますがグレンサーバでは船での取得を併用する必要があります  
   
 お断り  
-<sup>このプロジェクト 巡航船状況表示 CruiseShipStatusDisplayはエターナルベータとなります
+<sup>このプロジェクト 巡航船状況表示 CruiseShipStatusDisplay はエターナルベータとなります
