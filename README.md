@@ -8,7 +8,8 @@ This is a calculator for cruise ships in the game Archeage.
 <sup>現在レイナサーバではdNowだけで済みますがグレンサーバでは船での取得を併用する必要があります  
   
 <sup>https://github.com/606musical/CruiseShipStatusDisplay/assets/170735828/564dfc77-d2a4-4e47-93fa-46d34f1f8751  
-wolrdNowがナンノコッチャな方は船を見かけたら記録するを推奨、半日以上経過後のログイン等で船を見て遅延系を調整  
+動画リンクは使い方で wolrdNow がナンノコッチャな方は船を見かけたら記録を推奨、半日以上経過後  
+に船を見て遅延系を調整、サーバが安定していれば遅延はほぼ固定ですが基本的には変動するものです  
   
 お断り  
 <sup>このプロジェクト 巡航船状況表示 CruiseShipStatusDisplay はエターナルベータとなります
