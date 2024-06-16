@@ -109,6 +109,7 @@
             pictureBox1 = new PictureBox();
             label14 = new Label();
             pictureBox2 = new PictureBox();
+            toolStripMenuItem2 = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
             contextMenuStrip1.SuspendLayout();
@@ -279,10 +280,10 @@
             // 
             contextMenuStrip2.Items.AddRange(new ToolStripItem[] { ts17, ts17A, ts18, ts19, ts15, ts16, 本体表示切替ToolStripMenuItem, ts13, ts12 });
             contextMenuStrip2.Name = "contextMenuStrip2";
-            contextMenuStrip2.OwnerItem = toolStripMenuItem1;
             contextMenuStrip2.ShowImageMargin = false;
-            contextMenuStrip2.Size = new Size(174, 202);
+            contextMenuStrip2.Size = new Size(174, 224);
             contextMenuStrip2.Text = "cms2";
+            contextMenuStrip2.Opening += contextMenuStrip2_Opening;
             // 
             // ts17
             // 
@@ -402,7 +403,7 @@
             // 
             // 本体表示切替ToolStripMenuItem
             // 
-            本体表示切替ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ts041, ts042, ts043, 透過表示ToolStripMenuItem });
+            本体表示切替ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ts041, ts042, ts043, 透過表示ToolStripMenuItem, toolStripMenuItem2 });
             本体表示切替ToolStripMenuItem.Name = "本体表示切替ToolStripMenuItem";
             本体表示切替ToolStripMenuItem.Size = new Size(173, 22);
             本体表示切替ToolStripMenuItem.Text = "本体表示切替";
@@ -901,6 +902,13 @@
             pictureBox2.TabStop = false;
             pictureBox2.MouseLeave += pictureBox2_MouseLeave;
             // 
+            // toolStripMenuItem2
+            // 
+            toolStripMenuItem2.Name = "toolStripMenuItem2";
+            toolStripMenuItem2.Size = new Size(188, 22);
+            toolStripMenuItem2.Text = "透過表示終了";
+            toolStripMenuItem2.Click += toolStripMenuItem2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(6F, 12F);
@@ -1059,6 +1067,7 @@
         private ToolStripMenuItem ts042;
         private ToolStripMenuItem ts043;
         private ToolStripMenuItem 透過表示ToolStripMenuItem;
+        private ToolStripMenuItem toolStripMenuItem2;
     }
 }
 

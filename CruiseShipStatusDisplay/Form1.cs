@@ -1,5 +1,6 @@
 using Microsoft.Win32;
 using System.Data;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 using Windows.Graphics.Imaging;
@@ -60,6 +61,7 @@ namespace CruiseShipStatusDisplay
             }
             this.TransparencyKey = Color.Magenta;
         }
+        public System.Diagnostics.ProcessPriorityClass PriorityClass { get; set; }
         protected override void WndProc(ref System.Windows.Forms.Message m)
         {
             const int WM_NCRBUTTONDOWN = 0xa4;
@@ -109,8 +111,11 @@ namespace CruiseShipStatusDisplay
         {
             DWMWA_WINDOW_CORNER_PREFERENCE = 33
         }
+
         private void Form1_Load(object sender, EventArgs e)
         {
+            using (Process p = Process.GetCurrentProcess())
+                p.PriorityClass = ProcessPriorityClass.BelowNormal;
             string sKeyName = @"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize";
             string sSubkeyName = "SystemUsesLightTheme";
             RegistryKey? r2Key = Registry.CurrentUser.OpenSubKey(sKeyName);
@@ -1410,7 +1415,10 @@ namespace CruiseShipStatusDisplay
         }
         private void tsmic6(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("shell:ControlPanelFolder");
+            //Process.Start("shell:ControlPanelFolder");
+            var start = new ProcessStartInfo("shell:ControlPanelFolder");
+            start.UseShellExecute = true;
+            Process.Start(start);
         }
         private void tsmic7(object sender, EventArgs e)
         {
@@ -1753,15 +1761,19 @@ namespace CruiseShipStatusDisplay
         }
         private void ts15_Click(object sender, EventArgs e)
         {
-            clearstop();
-            d2l = 0;
-            SLD();
-            Resetvisual();
+            //clearstop();
+            //d2l = 0;
+            //SLD();
+            //Resetvisual();
         }
 
         private void ts041_Click(object? sender, EventArgs? e)
         {
-            DwmSetWindowAttribute(this.Handle, DWMWINDOWATTRIBUTE.DWMWA_WINDOW_CORNER_PREFERENCE, ref DWMWCP_DONOTROUND, sizeof(int));
+            try
+            {
+                DwmSetWindowAttribute(this.Handle, DWMWINDOWATTRIBUTE.DWMWA_WINDOW_CORNER_PREFERENCE, ref DWMWCP_DONOTROUND, sizeof(int));
+            }
+            catch { }
             sss = 0;
             mod[11] = "0";
             Resetvisual();
@@ -1769,7 +1781,11 @@ namespace CruiseShipStatusDisplay
 
         private void ts042_Click(object? sender, EventArgs? e)
         {
-            DwmSetWindowAttribute(this.Handle, DWMWINDOWATTRIBUTE.DWMWA_WINDOW_CORNER_PREFERENCE, ref DWMWCP_DONOTROUND, sizeof(int));
+            try
+            {
+                DwmSetWindowAttribute(this.Handle, DWMWINDOWATTRIBUTE.DWMWA_WINDOW_CORNER_PREFERENCE, ref DWMWCP_DONOTROUND, sizeof(int));
+            }
+            catch { }
             label17.Parent = this;
             label18.Parent = this;
             mod[11] = "1";
@@ -1779,8 +1795,12 @@ namespace CruiseShipStatusDisplay
 
         private void ts043_Click(object? sender, EventArgs? e)
         {
-            DWMWCP_ROUND = (DWM_WINDOW_CORNER_PREFERENCE)2;
-            DwmSetWindowAttribute(this.Handle, DWMWINDOWATTRIBUTE.DWMWA_WINDOW_CORNER_PREFERENCE, ref DWMWCP_ROUND, sizeof(int));
+            try
+            {
+                DWMWCP_ROUND = (DWM_WINDOW_CORNER_PREFERENCE)2;
+                DwmSetWindowAttribute(this.Handle, DWMWINDOWATTRIBUTE.DWMWA_WINDOW_CORNER_PREFERENCE, ref DWMWCP_ROUND, sizeof(int));
+            }
+            catch { }
             label9.Parent = this;
             label17.Parent = this;
             label18.Parent = this;
@@ -1791,6 +1811,7 @@ namespace CruiseShipStatusDisplay
 
         private void “§‰ß•\Ž¦ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //pictureBox2.BackgroundImage=null;
             this.TransparencyKey = this.BackColor;
             ts04f = 1;
         }
@@ -1801,6 +1822,19 @@ namespace CruiseShipStatusDisplay
             {
                 this.TransparencyKey = this.BackColor;
             }
+        }
+
+        private void contextMenuStrip2_Opening(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            clearstop();
+            d2l = 0;
+            SLD();
+            Resetvisual();
         }
     }
 }
