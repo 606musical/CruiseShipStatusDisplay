@@ -144,7 +144,7 @@ namespace CruiseShipStatusDisplay
                 {
                     ts52.Enabled = false;
                     ts53.Enabled = true;
-                    ts52.Text = "ON‚É‚È‚Á‚Ä‚¢‚Ü‚·";
+                    ts52.Text = "ONã«ãªã£ã¦ã„ã¾ã™";
                     ts53.Text = "OFF";
                 }
                 if (tkg == "9F" || tkg == "9E" || tkg == "98" || tkg == "90")
@@ -152,7 +152,7 @@ namespace CruiseShipStatusDisplay
                     ts53.Enabled = false;
                     ts52.Enabled = true;
                     ts52.Text = "ON";
-                    ts53.Text = "OFF‚É‚È‚Á‚Ä‚¢‚Ü‚·";
+                    ts53.Text = "OFFã«ãªã£ã¦ã„ã¾ã™";
                 }
                 rKe2.Close();
             }
@@ -233,7 +233,7 @@ namespace CruiseShipStatusDisplay
             }
             if (mod[0] == "1")
             {
-                checkBox1.Text = "‘D"; this.checkBox1.Left = 13; comboBox1.Visible = true;
+                checkBox1.Text = "èˆ¹"; this.checkBox1.Left = 13; comboBox1.Visible = true;
             }
             if (mod[3] == "R") { label17.Text = "R"; cb2ff = 0; }
             if (mod[3] == "G") { label17.Text = "G"; cb2ff = 1; }
@@ -395,11 +395,11 @@ namespace CruiseShipStatusDisplay
                 {
                     if (s2[0].Length < 14 || s2[0].Length > 14)
                     {
-                        label1.Text = ("“ú‚ª14Œ…‚ ‚è‚Ü‚¹‚ñ"); label2.Text = ("Šm”F");
+                        label1.Text = ("æ—¥æ™‚ãŒ14æ¡ã‚ã‚Šã¾ã›ã‚“"); label2.Text = ("ç¢ºèª");
                     }
                     if (dat1 < DateTime.Now - new TimeSpan(10, 0, 0, 0) || DateTime.Now + new TimeSpan(10, 0, 0, 0) < dat1)
                     {
-                        label1.Text = ("}10“ú‚ğ’´‰ß‚µ‚Ü‚µ‚½"); label2.Text = ("Šm”F");
+                        label1.Text = ("Â±10æ—¥ã‚’è¶…éã—ã¾ã—ãŸ"); label2.Text = ("ç¢ºèª");
                     }
                     dat2 = new TimeSpan(00, int.Parse(s2[1].Substring(0, 2)), int.Parse(s2[1].Substring(2, 2)));
                     textBox2.Text = (dat2.ToString().Substring(3, 5)).Replace(":", "");
@@ -435,11 +435,11 @@ namespace CruiseShipStatusDisplay
                 {
                     if (s2[0].Length < 14 || s2[0].Length > 14)
                     {
-                        label1.Text = ("“ú‚ª14Œ…‚ ‚è‚Ü‚¹‚ñ"); label2.Text = ("Šm”F");
+                        label1.Text = ("æ—¥æ™‚ãŒ14æ¡ã‚ã‚Šã¾ã›ã‚“"); label2.Text = ("ç¢ºèª");
                     }
                     if (dat1 < DateTime.Now - new TimeSpan(10, 0, 0, 0) || DateTime.Now + new TimeSpan(10, 0, 0, 0) < dat1)
                     {
-                        label1.Text = ("}10“ú‚ğ’´‰ß‚µ‚Ü‚µ‚½"); label2.Text = ("Šm”F");
+                        label1.Text = ("Â±10æ—¥ã‚’è¶…éã—ã¾ã—ãŸ"); label2.Text = ("ç¢ºèª");
                     }
                     dat2 = new TimeSpan(00, 00, 00, 00, int.Parse(s2[1]));
                     textBox2.Text = double.Parse(s2[1]).ToString();
@@ -462,13 +462,13 @@ namespace CruiseShipStatusDisplay
             {
                 timer1.Enabled = false;
                 this.Height = 250;
-                label1.Text = "‚ğƒNƒŠƒbƒN‚µ‚Ä‰º‚³‚¢";
-                label9.Text = "ƒf[ƒ^‚ğÄ";
-                label11.Text = "“ü—Í‚µ‚Ä";
-                label12.Text = "[XV]";
-                label13.Text = "ƒ{ƒ^ƒ“";
-                label2.Text = "‚ñ‚Ü‚¢";
-                label17.Text = "‚Ç";
+                label1.Text = "ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦ä¸‹ã•ã„";
+                label9.Text = "ãƒ‡ãƒ¼ã‚¿ã‚’å†";
+                label11.Text = "å…¥åŠ›ã—ã¦";
+                label12.Text = "[æ›´æ–°]";
+                label13.Text = "ãƒœã‚¿ãƒ³";
+                label2.Text = "ã‚“ã¾ã„";
+                label17.Text = "ã©";
                 tcf = 1;
                 return;
             }
@@ -897,11 +897,11 @@ namespace CruiseShipStatusDisplay
                 this.checkBox1.Left = 13;
                 comboBox1.Visible = true;
                 mod[0] = "1";
-                checkBox1.Text = "‘D";
+                checkBox1.Text = "èˆ¹";
                 datacopie(); Re_start();
                 return;
             }
-            if (checkBox1.Text == "‘D")
+            if (checkBox1.Text == "èˆ¹")
             {
                 this.checkBox1.Left = 13;
                 comboBox1.Visible = false;
@@ -963,14 +963,14 @@ namespace CruiseShipStatusDisplay
                     }
                     else
                     {
-                        textBox1.Text = "dNow=‚ª‚ ‚è‚Ü‚¹‚ñ";
+                        textBox1.Text = "dNow=ãŒã‚ã‚Šã¾ã›ã‚“";
                         textBox2.Text = "-";
                         chb = 0;
                     }
                 }
                 if (mod[0] == "1")
                 {
-                    string[] dnow = new string[] { "•ª", "•b" };
+                    string[] dnow = new string[] { "åˆ†", "ç§’" };
                     if (dnow.All(tt.Contains))
                     {
                         if (rett.Length >= 1 || rett.Length <= 3)
@@ -984,8 +984,8 @@ namespace CruiseShipStatusDisplay
                     }
                     else
                     {
-                        textBox1.Text = "’â”‘cŠÔ‚ª‚ ‚è‚Ü‚¹‚ñ";
-                        textBox2.Text = "•ª‚Æ•b‚ª–³‚¢‚Æ‹L˜^•s‰Â";
+                        textBox1.Text = "åœæ³Šæ®‹æ™‚é–“ãŒã‚ã‚Šã¾ã›ã‚“";
+                        textBox2.Text = "åˆ†ã¨ç§’ãŒç„¡ã„ã¨è¨˜éŒ²ä¸å¯";
                         chb = 0;
                     }
                 }
@@ -1054,7 +1054,7 @@ namespace CruiseShipStatusDisplay
                     tbki = 0;
                 }
             }
-            catch { textBox1.Text = "’lˆÙí,XV–t2‰ñ‚Å•œ‹A"; return; }
+            catch { textBox1.Text = "å€¤ç•°å¸¸,æ›´æ–°é‡¦2å›ã§å¾©å¸°"; return; }
             if (mod[0] == "1")
             {
                 string tmpx = textBox2.Text;
@@ -1080,7 +1080,7 @@ namespace CruiseShipStatusDisplay
                         tbki2 = 0;
                     }
                 }
-                catch { textBox2.Text = "’lˆÙí,XV–t2‰ñ‚Å•œ‹A"; return; }
+                catch { textBox2.Text = "å€¤ç•°å¸¸,æ›´æ–°é‡¦2å›ã§å¾©å¸°"; return; }
             }
             if (mod[0] == "0")
             {
@@ -1105,7 +1105,7 @@ namespace CruiseShipStatusDisplay
                         tbki3 = 0;
                     }
                 }
-                catch { textBox2.Text = "’lˆÙí,XV–t2‰ñ‚Å•œ‹A"; return; }
+                catch { textBox2.Text = "å€¤ç•°å¸¸,æ›´æ–°é‡¦2å›ã§å¾©å¸°"; return; }
             }
             if (tcf == 1)
             {
@@ -1180,7 +1180,7 @@ namespace CruiseShipStatusDisplay
                 {
                     if (sts[ii] - wts - t2s < now && sts[ii] - wts > now)
                     {
-                        label1.Text = ("ƒTƒ“ƒ‰ƒCƒY”¼“‡‚Öqs’†");
+                        label1.Text = ("ã‚µãƒ³ãƒ©ã‚¤ã‚ºåŠå³¶ã¸èˆªè¡Œä¸­");
                         SetState(progressBar1, ProgressBarStateEnum.Normal);
                         fix = (sts[ii] - wts - now).ToString();
                         fix2 = fix.Substring(3, 5);
@@ -1193,7 +1193,7 @@ namespace CruiseShipStatusDisplay
                         progressBar1.Value = 1047 - int.Parse(fix2);
                         progressBar1.RightToLeft = RightToLeft.No;
                         progressBar1.RightToLeftLayout = false;
-                        fix4 = "“ü`";
+                        fix4 = "å…¥æ¸¯";
                         label15.Text = ">>";
                         double np = (int)progressBar1.Value * 0.1404011461318052;
                         if (np <= 147)
@@ -1204,7 +1204,7 @@ namespace CruiseShipStatusDisplay
                     }
                     if (now > sts[ii] - wts && now < sts[ii])
                     {
-                        label1.Text = ("ƒTƒ“ƒ‰ƒCƒY”¼“‡‚É’â”‘’†");
+                        label1.Text = ("ã‚µãƒ³ãƒ©ã‚¤ã‚ºåŠå³¶ã«åœæ³Šä¸­");
                         SetState(progressBar1, ProgressBarStateEnum.Error);
                         fix = (sts[ii] - now).ToString();
                         fix2 = fix.Substring(3, 5);
@@ -1217,8 +1217,8 @@ namespace CruiseShipStatusDisplay
                         progressBar1.Value = int.Parse(fix2);
                         progressBar1.RightToLeft = RightToLeft.Yes;
                         progressBar1.RightToLeftLayout = true;
-                        fix4 = "oq";
-                        label15.Text = "’â”‘’† " + label2.Text;
+                        fix4 = "å‡ºèˆª";
+                        label15.Text = "åœæ³Šä¸­ " + label2.Text;
                         label15.Location = new System.Drawing.Point(170, 32);
                         break;
                     }
@@ -1227,7 +1227,7 @@ namespace CruiseShipStatusDisplay
                 {
                     if (now > sts[ii] - wts - s2t && now < sts[ii] - wts)
                     {
-                        label1.Text = ("ƒcƒCƒ“ƒNƒ‰ƒEƒ“‚Öqs’†");
+                        label1.Text = ("ãƒ„ã‚¤ãƒ³ã‚¯ãƒ©ã‚¦ãƒ³ã¸èˆªè¡Œä¸­");
                         SetState(progressBar1, ProgressBarStateEnum.Normal);
                         fix = (sts[ii] - wts - now).ToString();
                         fix2 = fix.Substring(3, 5);
@@ -1240,7 +1240,7 @@ namespace CruiseShipStatusDisplay
                         progressBar1.Value = 1021 - int.Parse(fix2);
                         progressBar1.RightToLeft = RightToLeft.Yes;
                         progressBar1.RightToLeftLayout = true;
-                        fix4 = "“ü`";
+                        fix4 = "å…¥æ¸¯";
                         label15.Text = "<<";
                         double np = (int)progressBar1.Value * 0.1439764936336925;
                         if (np <= 147)
@@ -1251,7 +1251,7 @@ namespace CruiseShipStatusDisplay
                     }
                     if (now > sts[ii] - wts && now < sts[ii])
                     {
-                        label1.Text = ("ƒcƒCƒ“ƒNƒ‰ƒEƒ“‚É’â”‘’†");
+                        label1.Text = ("ãƒ„ã‚¤ãƒ³ã‚¯ãƒ©ã‚¦ãƒ³ã«åœæ³Šä¸­");
                         SetState(progressBar1, ProgressBarStateEnum.Error);
                         fix = (sts[ii] - now).ToString();
                         fix2 = fix.Substring(3, 5);
@@ -1264,8 +1264,8 @@ namespace CruiseShipStatusDisplay
                         progressBar1.Value = int.Parse(fix2);
                         progressBar1.RightToLeft = RightToLeft.No;
                         progressBar1.RightToLeftLayout = false;
-                        fix4 = "oq";
-                        label15.Text = label2.Text + " ’â”‘’†";
+                        fix4 = "å‡ºèˆª";
+                        label15.Text = label2.Text + " åœæ³Šä¸­";
                         label15.Location = new System.Drawing.Point(0, 32);
                         break;
                     }
@@ -1415,7 +1415,7 @@ namespace CruiseShipStatusDisplay
         }
         private void tsmic6(object sender, EventArgs e)
         {
-            //Process.Start("shell:ControlPanelFolder");
+            //Process.Start("shell:ControlPanelFolder");WUã®é–¢ä¿‚ã‹ã“ã‚Œã ã¨ã‚¨ãƒ©ãƒ¼
             var start = new ProcessStartInfo("shell:ControlPanelFolder");
             start.UseShellExecute = true;
             Process.Start(start);
@@ -1429,11 +1429,11 @@ namespace CruiseShipStatusDisplay
             fmm ^= 1;
             if (fmm == 0)
             {
-                ts17A.Text = "ˆÊ’uŒÅ’è on";
+                ts17A.Text = "ä½ç½®å›ºå®š on";
             }
             else
             {
-                ts17A.Text = "ˆÊ’uŒÅ’è off";
+                ts17A.Text = "ä½ç½®å›ºå®š off";
 
             }
         }
@@ -1492,11 +1492,11 @@ namespace CruiseShipStatusDisplay
             contextMenuStrip1.Refresh();
             if (scn == "A")
             {
-                ts9.Text = "- - Œ»İ cfg ‚Í A - -";
+                ts9.Text = "- - ç¾åœ¨ cfg ã¯ A - -";
             }
             if (scn == "B")
             {
-                ts9.Text = "- - Œ»İ cfg ‚Í B - -";
+                ts9.Text = "- - ç¾åœ¨ cfg ã¯ B - -";
             }
         }
         private void OTSMIC(object sender, EventArgs e)
@@ -1505,7 +1505,7 @@ namespace CruiseShipStatusDisplay
             SystemParametersInfo(SPI_SETACTIVEWNDTRKZORDER, 0, (IntPtr)1, SPIF_SENDCHANGE | SPIF_UPDATEINIFILE);
             ts52.Enabled = false;
             ts53.Enabled = true;
-            ts52.Text = "Œ»İ ON";
+            ts52.Text = "ç¾åœ¨ ON";
             ts53.Text = "OFF";
         }
         private void TSMI10C(object sender, EventArgs e)
@@ -1574,7 +1574,7 @@ namespace CruiseShipStatusDisplay
             ts53.Enabled = false;
             ts52.Enabled = true;
             ts52.Text = "ON";
-            ts53.Text = "Œ»İ OFF";
+            ts53.Text = "ç¾åœ¨ OFF";
         }
         private void TSCB1SIC(object sender, EventArgs e)
         {
@@ -1809,7 +1809,7 @@ namespace CruiseShipStatusDisplay
             Resetvisual();
         }
 
-        private void “§‰ß•\¦ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void é€éè¡¨ç¤ºToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //pictureBox2.BackgroundImage=null;
             this.TransparencyKey = this.BackColor;
