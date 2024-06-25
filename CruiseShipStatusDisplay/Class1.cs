@@ -19,7 +19,7 @@ namespace subR
         public static void PowerOff()
         {
             //モニター停止
-            SendMessage(-1, WM_SYSCOMMAND, SC_MONITORPOWER, 2);
+            PostMessage(-1, WM_SYSCOMMAND, SC_MONITORPOWER, 2);
         }
     }
     class Volume
