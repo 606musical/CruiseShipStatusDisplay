@@ -16,8 +16,8 @@ This is a calculator for cruise ships in the game Archeage.
   
 <sup>ちなみに今週の当方のデータ  
 G 遅延系調整 930  
-worldNow &nbsp;&nbsp;&nbsp;計測日時 ------ 対象残時間 ------ 記録値調整 -- 0  
-船 サン &nbsp;&nbsp;&nbsp;&nbsp;計測日時 20240703202550 対象残時間 0518 記録値調整 -1 0  
+worldNow &nbsp;&nbsp;&nbsp;計測日時 20240717124316 対象残時間 8847261 記録値調整 -- 25  
+船 ツイン &nbsp;&nbsp;&nbsp;&nbsp;計測日時 20240717124718 対象残時間 0139 記録値調整 -1 0  
 R 遅延系調整 240  
-worldNow &nbsp;&nbsp;&nbsp;計測日時 ------ 対象残時間 ------ 記録値調整 -- 0  
-船 サン &nbsp;&nbsp;&nbsp;&nbsp;計測日時 20240703202414 対象残時間 0627 記録値調整 -1 0
+worldNow &nbsp;&nbsp;&nbsp;計測日時 20240717124051 対象残時間 8690858 記録値調整 -- 9  
+船 ツイン &nbsp;&nbsp;&nbsp;&nbsp;計測日時 20240717124221 対象残時間 0627 記録値調整 -1 0
