@@ -15,9 +15,9 @@ This is a calculator for cruise ships in the game Archeage.
 <sup>このプロジェクト 巡航船状況表示 CruiseShipStatusDisplay はエターナルベータとなります
   
 <sup>ちなみに今週の当方のデータ  
-G 遅延系調整 930  
-worldNow &nbsp;&nbsp;&nbsp;計測日時 20240717124316 対象残時間 8847261 記録値調整 25 0   
-船 ツイン &nbsp;&nbsp;&nbsp;&nbsp;計測日時 20240717124718 対象残時間 0139 記録値調整 -1 0  
+G 遅延系調整 880  
+worldNow &nbsp;&nbsp;&nbsp;計測日時 20240724192951 対象残時間 33168759 記録値調整 25 0   
+船 サン &nbsp;&nbsp;&nbsp;&nbsp;計測日時 20240724201601 対象残時間 1305 記録値調整 -1 0  
 R 遅延系調整 240  
-worldNow &nbsp;&nbsp;&nbsp;計測日時 20240717124051 対象残時間 8690858 記録値調整 9 0  
-船 ツイン &nbsp;&nbsp;&nbsp;&nbsp;計測日時 20240717124221 対象残時間 0627 記録値調整 -1 0
+worldNow &nbsp;&nbsp;&nbsp;計測日時 20240724192852 対象残時間 33111154 記録値調整 6 0  
+船 サン &nbsp;&nbsp;&nbsp;&nbsp;計測日時 20240724202549 対象残時間 0244 記録値調整 -1 0
