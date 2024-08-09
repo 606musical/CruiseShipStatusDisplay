@@ -21,3 +21,7 @@ worldNow &nbsp;&nbsp;&nbsp;計測日時 20240724192951 対象残時間 33168759 
 R 遅延系調整 240  
 worldNow &nbsp;&nbsp;&nbsp;計測日時 20240724192852 対象残時間 33111154 記録値調整 6 0  
 船 サン &nbsp;&nbsp;&nbsp;&nbsp;計測日時 20240724202549 対象残時間 0244 記録値調整 -1 0
+
+worldNow？  
+`33oScn?^k!TOiAreueB`  
+`--r_DisplayInfo = 2` --はコメントアウト
