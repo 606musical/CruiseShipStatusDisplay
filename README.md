@@ -1,3 +1,6 @@
+使ってたよとかいうレスポンスゼロなので誰に感謝もなくarcheageサービス終了にて凍結になります  
+何かまた似たようなツールを作る時のコピペ用に。  
+  
 only Japanese language  
 This is a calculator for cruise ships in the game Archeage.  
 ![image](https://github.com/606musical/CruiseShipStatusDisplay/assets/170735828/db347cf2-f025-4925-af8a-33113d262bca)  
