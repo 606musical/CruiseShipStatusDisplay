@@ -970,7 +970,7 @@ namespace CruiseShipStatusDisplay
                 }
                 if (mod[0] == "1")
                 {
-                    string[] dnow = new string[] { "分", "秒" };
+                    string[] dnow = new string[] { "min", "sec" };
                     if (dnow.All(tt.Contains))
                     {
                         if (rett.Length >= 1 || rett.Length <= 3)
