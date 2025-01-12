@@ -1,9 +1,5 @@
 ﻿using CoreAudioManager;
-using System;
-using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading;
 
 namespace subR
 {
@@ -19,7 +15,7 @@ namespace subR
         public static void PowerOff()
         {
             //モニター停止
-            PostMessage(-1, WM_SYSCOMMAND, SC_MONITORPOWER, 2);
+            SendMessage(-1, WM_SYSCOMMAND, SC_MONITORPOWER, 2);
         }
     }
     class Volume

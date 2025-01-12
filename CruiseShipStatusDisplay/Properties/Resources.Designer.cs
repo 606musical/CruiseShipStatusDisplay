@@ -73,49 +73,9 @@ namespace CruiseShipStatusDisplay.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap backborderD {
-            get {
-                object obj = ResourceManager.GetObject("backborderD", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap backborderL {
-            get {
-                object obj = ResourceManager.GetObject("backborderL", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap c10b_transparent {
-            get {
-                object obj = ResourceManager.GetObject("c10b_transparent", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
         internal static System.Drawing.Bitmap c10b_transparentA {
             get {
                 object obj = ResourceManager.GetObject("c10b_transparentA", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap c10l_transparent {
-            get {
-                object obj = ResourceManager.GetObject("c10l_transparent", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
